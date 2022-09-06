@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -25,12 +26,15 @@ public class FirstFragment extends Fragment {
 
     private RadioGroup rad_group;
 
+    private CheckBox check_sum, check_sub, check_mul, check_div;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
         binding = FragmentFirstBinding.inflate(inflater, container, false);
+
         txt_number1 = (EditText) binding.txtNumber1;
         txt_number2 = (EditText) binding.txtNumber2;
         txt_res = (EditText) binding.txtRes;
@@ -39,6 +43,11 @@ public class FirstFragment extends Fragment {
         rad_mul = (RadioButton) binding.radMultiply;
         rad_div = (RadioButton) binding.radDivide;
         rad_group = (RadioGroup) binding.radGroup;
+
+        check_sum = (CheckBox) binding.checkSum;
+        check_sub = (CheckBox) binding.checkSub;
+        check_mul = (CheckBox) binding.checkMul;
+        check_div = (CheckBox) binding.checkDiv;
 
         return binding.getRoot();
     }
@@ -63,7 +72,39 @@ public class FirstFragment extends Fragment {
                 mul();
             } else if (rad_div.isChecked()) {
                 div();
-            } else {
+            } else if (check_sum.isChecked() && check_sub.isChecked()) {
+                String suma = sum();
+                String resta= sub();
+                String res = String.valueOf("La suma es: " + suma + ", La resta es: " + resta);
+                txt_res.setText(res);
+            } else if (check_sum.isChecked() && check_div.isChecked()) {
+                String suma = sum();
+                String divi= div();
+                String res = String.valueOf("La suma es: " + suma + ", La división es: " + divi);
+                txt_res.setText(res);
+            } else if (check_sum.isChecked() && check_mul.isChecked()) {
+                String suma = sum();
+                String multi= mul();
+                String res = String.valueOf("La suma es: " + suma + ", La multiplicación es: " + multi);
+                txt_res.setText(res);
+            } else if (check_sub.isChecked() && check_div.isChecked()) {
+                String resta = sub();
+                String divi= div();
+                String res = String.valueOf("La resta es: " + resta + ", La división es: " + divi);
+                txt_res.setText(res);
+            } else if (check_sub.isChecked() && check_mul.isChecked()) {
+                String resta = sub();
+                String multi= mul();
+                String res = String.valueOf("La resta es: " + resta + ", La resta es: " + multi);
+                txt_res.setText(res);
+            } else if (check_div.isChecked() && check_mul.isChecked()) {
+                String divi = div();
+                String multi= mul();
+                String res = String.valueOf("La división es: " + divi + ", La multiplicación es: " + multi);
+                txt_res.setText(res);
+            }
+
+            else {
                 showMessage();
             }
         });
@@ -105,7 +146,7 @@ public class FirstFragment extends Fragment {
         double val_2 = Integer.parseInt(txt_number2.getText().toString());
         String res = "";
         if (val_2 != 0) {
-            double sum = val_1 * val_2;
+            double sum = val_1 / val_2;
             res = String.valueOf(sum);
             txt_res.setText(res);
         } else {

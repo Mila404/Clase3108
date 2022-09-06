@@ -22,7 +22,7 @@
         android:id="@+id/txt_number1"
         android:layout_width="143dp"
         android:layout_height="50dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="40dp"
         android:ems="10"
         android:hint="@string/number_1"
         android:inputType="textPersonName"
@@ -40,7 +40,7 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toEndOf="@+id/txt_number1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.079" />
@@ -52,6 +52,7 @@
         android:text="@string/calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_first"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.922" />
@@ -69,8 +70,8 @@
 
     <RadioGroup
         android:id="@+id/rad_group"
-        android:layout_width="144dp"
-        android:layout_height="216dp"
+        android:layout_width="146dp"
+        android:layout_height="193dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
@@ -105,19 +106,55 @@
     </RadioGroup>
 
     <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Suma"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="161dp" />
+        android:id="@+id/check_sum"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:hint="@string/sum"
+        android:text="@string/sum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resta"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="222dp" />
+        android:id="@+id/check_div"
+        android:layout_width="143dp"
+        android:layout_height="56dp"
+        android:hint="@string/divide"
+        android:text="@string/divide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <CheckBox
+        android:id="@+id/check_mul"
+        android:layout_width="168dp"
+        android:layout_height="57dp"
+        android:hint="@string/multiply"
+        android:text="@string/multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <CheckBox
+        android:id="@+id/check_sub"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:hint="@string/substract"
+        android:text="@string/substract"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
