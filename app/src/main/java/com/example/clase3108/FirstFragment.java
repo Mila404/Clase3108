@@ -110,6 +110,8 @@ public class FirstFragment extends Fragment {
         });
     }
 
+    //
+
     public void showMessage() {
         Toast.makeText(this.getContext(), "No se ha seleccionado ninguna operación", Toast.LENGTH_SHORT).show();
     }
