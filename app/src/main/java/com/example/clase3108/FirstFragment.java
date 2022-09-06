@@ -95,7 +95,7 @@ public class FirstFragment extends Fragment {
             } else if (check_sub.isChecked() && check_mul.isChecked()) {
                 String resta = sub();
                 String multi= mul();
-                String res = String.valueOf("La resta es: " + resta + ", La resta es: " + multi);
+                String res = String.valueOf("La resta es: " + resta + ", La multiplicación es: " + multi);
                 txt_res.setText(res);
             } else if (check_div.isChecked() && check_mul.isChecked()) {
                 String divi = div();
