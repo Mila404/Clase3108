@@ -28,4 +28,10 @@
     <string name="divide">Dividir</string>
     <string name="multiply">Multiplicar</string>
 
+<!--    Strings for calculator 2-->
+    <string name="num_1">Numero 1</string>
+    <string name="num_2">Numero 2</string>
+    <string name="calc_1">CALCULAR</string>
+    <string name="res_2">Respuesta</string>
+
 </resources>
