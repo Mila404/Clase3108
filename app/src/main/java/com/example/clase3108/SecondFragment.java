@@ -7,13 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.clase3108.databinding.FragmentSecondBinding;
 
@@ -29,8 +27,8 @@ public class SecondFragment extends Fragment {
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
-
     ) {
+
         binding = FragmentSecondBinding.inflate(inflater, container, false);
 
         num_1 = (EditText) binding.num1;
@@ -40,6 +38,7 @@ public class SecondFragment extends Fragment {
 
         String [] operations =
                 {
+                        "Operación",
                         "Sumar",
                         "Restar",
                         "Multiplicar",
@@ -136,7 +135,6 @@ public class SecondFragment extends Fragment {
         }
         return res;
     }
-
 
     @Override
     public void onDestroyView() {

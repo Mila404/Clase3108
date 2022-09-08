@@ -61,12 +61,15 @@
         android:id="@+id/txt_res"
         android:layout_width="329dp"
         android:layout_height="155dp"
-        android:layout_marginBottom="132dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <RadioGroup
         android:id="@+id/rad_group"
@@ -120,29 +123,29 @@
 
     <CheckBox
         android:id="@+id/check_div"
-        android:layout_width="143dp"
-        android:layout_height="56dp"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
         android:hint="@string/divide"
         android:text="@string/divide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.491" />
 
     <CheckBox
         android:id="@+id/check_mul"
-        android:layout_width="168dp"
-        android:layout_height="57dp"
+        android:layout_width="154dp"
+        android:layout_height="55dp"
         android:hint="@string/multiply"
         android:text="@string/multiply"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.409" />
 
     <CheckBox
         android:id="@+id/check_sub"

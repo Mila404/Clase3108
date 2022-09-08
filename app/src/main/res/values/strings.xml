@@ -1,25 +1,26 @@
 <resources>
     <string name="app_name">Clase3108</string>
     <string name="action_settings">Settings</string>
+
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Primer Fragmento</string>
-    <string name="second_fragment_label">Segundo Fragmento</string>
-    <string name="third_fragment_label">Tercer Fragmento</string>
+    <string name="first_fragment_label">1er Fragmento</string>
+    <string name="second_fragment_label">2do Fragmento</string>
+    <string name="third_fragment_label">3er Fragmento</string>
     <string name="next">Siguiente</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hello_world">Hola mundo desde archivo string.</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings used for fragments buttons (Fragment 2) -->
     <string name="to_first_fragment">1er Fragmento</string>
     <string name="to_second_fragment">2do Fragmento</string>
     <string name="to_third_fragment">3er Fragmento</string>
     <string name="third_fragment">3er Fragmento</string>
 
-<!--    Strings for calculator-->
-
+    <!-- Strings for calculator (Fragment 1) -->
     <string name="number_1">Número 1</string>
     <string name="number_2">Número 2</string>
     <string name="calculate">Calcular</string>
@@ -28,10 +29,10 @@
     <string name="divide">Dividir</string>
     <string name="multiply">Multiplicar</string>
 
-<!--    Strings for calculator 2-->
+    <!-- Strings for calculator (Fragment 2) -->
     <string name="num_1">Numero 1</string>
     <string name="num_2">Numero 2</string>
     <string name="calc_1">CALCULAR</string>
-    <string name="res_2">Respuesta</string>
+    <string name="res_2">Resultado</string>
 
 </resources>
